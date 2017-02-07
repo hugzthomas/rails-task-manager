@@ -1,0 +1,10 @@
+<h1>My Bucket list</h1>
+
+<%= link_to "Add a task", new_task_path, class: "btn btn-primary" %>
+
+<% @tasks.each do |task| %>
+<h2> <%= link_to task.name, task_path(task) %> </h2> 
+<p> <%= task.category %></p>
+<p> <%= '*' * task.priority %></p>
+<p> <%= link_to "Delete Task", task_path(task), method: :delete, data: { confirm: "Are you sure you want to destroy dat shit narvalo?" } %>
+<% end %>

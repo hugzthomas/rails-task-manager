@@ -1,0 +1,7 @@
+<%= form_for(@task) do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name, placeholder: "task"%>
+<%= f.text_field :category, placeholder: "category" %>
+<%= f.number_field :priority, placeholder: "priority" %>
+<%= f.submit %>
+<% end %>

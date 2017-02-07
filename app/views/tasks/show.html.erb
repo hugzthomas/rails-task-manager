@@ -1,0 +1,6 @@
+<h1><%= @task.name %></h1>
+<h2><%= @task.category %></h2>
+<h2><%= '*' * @task.priority %></h2>
+
+<%= link_to "edit task", edit_task_path(@task) %>
+
